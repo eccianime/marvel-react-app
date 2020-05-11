@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: "Roboto-Regular";	src: url(fonts/Roboto-Regular.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: "Roboto-Light";	src: url(fonts/Roboto-Light.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+	font-family: "Roboto-Black";	src: url(fonts/Roboto-Black.ttf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+	margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+	font-size: 16px;
+	color: #d42026;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	padding: 12px 42px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nomedocandidato{
+	display: none;
+}
+
+.headerLeft{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+.buscamarvel{
+	font-family: "Roboto-Black";
+}
+
+.nomedocandidato{
+	display: none;
+}
+
+.testefrontend, .nomedocandidato{
+	font-family: "Roboto-Light"
+}	
+
+.footer {
+	width: 100%;
+	height: 12px;
+	background-color: #d42026;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+.line{
+	height: 4px;
+	width: 54px;
+	background-color: #d42026;
+	margin-left: 42px;
+	margin-bottom: 34px;
+}
+
+.search{
+	display: flex;
+	flex-direction: column;
+}
+
+.nomedopersonagem{
+	font-family: "Roboto-Regular";
+	color: #d42026;
+	margin-left: 42px;
+	margin-right: 42px;
+}
+
+.Rectangle_8{
+	border: 1px solid #A5a5a5;
+	text-align: center;
+	margin: 0px 42px 12px;
+	height: 31px;
+	border-radius: 5px;
+}
+
+.table{
+	margin: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td{
+	padding: 10px;
+}
+
+.table .head td:nth-child(1n){
+	width: 25%;
+	border: none;
+}
+
+.table .head td:nth-child(2n){
+	width: 75%;
+	border: none;
+}
+
+.series{
+	font-family: "Roboto-Regular";
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #d42026;
+	height: 37px;
+}
+
+img{
+	height: 58px;
+	width: 58px;
+	border-radius: 50%;
+	margin: 18px;
+	border: 1px solid black;
+}
+
+.tonyStark{
+	font-family: "Roboto-Regular";
+	color: #4e4e4e;
+	font-size: 21px;
+	line-height: 24px;
+}
+
+.row{
+	border-bottom: 1px solid rgb(212,32,38);
+}
+
+.row:hover{
+	background-color: rgba( 250, 233, 233 );
+}
+
+.tableContainer{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.pagination{
+	padding-top: 16px;
+	padding-bottom: 28px;
+}
+
+.pagination div{
+	cursor: pointer;
+	font-size: 21px;
+	color: #d42026;
+	font-family: "Roboto-Regular";
+}
+
+.pagination .circle{
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	margin: 0px 10px;
+}
+
+.pagination .circle-full{
+	color: white;
+	background-color: #d42026;
+}
+
+.pagination .circle-white{
+	color: #d42026;
+	background-color: white;
+	border: 1px solid #d42026;
+}
+
+.pagination .playButton-2{
+	margin-right:50px;
+	margin-left: 30px;
+}
+
+.pagination .playButton{
+	margin-left:50px;
+	margin-right: 30px;
+}
+
+.centerx2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.disabled{
+	opacity: .5;
+	cursor: not-allowed;
+}
+
+
+@media only screen and (min-width: 361px) {
+	.header{
+		font-size: 27px;
+		padding: 20px 42px 0px;
+	}
+
+	.nomedocandidato{
+		display: flex;
+	}
+
+	.headerLeft{
+		flex: 0.75;
+	}
+
+	.headerRight{
+		flex: 0.25;
+	}
+
+	.Rectangle_8{
+		width: 400px;
+		margin: 0px 42px 34px;
+	}
+
+	.table{
+		border-collapse: collapse;
+	}
+
+	.table .head td:nth-child(1n){
+		width: 25%;
+		border-right: 10px solid white;
+	}
+
+	.table .head td:nth-child(2n){
+		width: 25%;
+		border-right: 10px solid white;
+	}
+
+	.table .head td:nth-child(3n){
+		width: 50%;
+		border-right: none;
+	}
+
+	.row{
+		border-bottom: 3px solid rgb(246,210,211);
+	}
+
+	.personagem{
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.tableContainer{
+		padding-left: 42px;
+		padding-right: 42px;
+	}
+
+	.pagination .playButton-2{
+		margin-right:2px;
+	}
+
+	.pagination .playButton{
+		margin-left:2px;
+	}
 }
